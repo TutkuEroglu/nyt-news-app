@@ -16,6 +16,7 @@ slider.className = "slider";
 const slides = document.createElement("div");
 slides.className = "slides";
 
+
 const controls = document.createElement("div");
 controls.className = "controls";
 
@@ -33,9 +34,22 @@ currentSlideText.id = "current-slide";
 currentSlideText.textContent = `Şu anki eleman: ${currentIndex + 1}`;
 
 images.forEach((imageUrl) => {
+    const imgContent = document.createElement("div");
+    imgContent.className = "imgContent"
     const img = document.createElement("img");
     img.src = imageUrl;
-    slides.appendChild(img);
+    slides.appendChild(imgContent);
+    imgContent.appendChild(img);
+
+    const slidesTextArea = document.createElement("div");
+    slidesTextArea.className = "slidesTextArea";
+
+    const slidesText = document.createElement("span");
+    slidesText.className = "slidesText";
+    slidesText.textContent = "dfdfsdfdsfsdfsdfdsdfdfsdfdsfsdfsdfdsdfdfsdfdsfsdfsdfdsdfdfsdfdsfsdfsdfdsdfdfsdfdsfsdfsdfdsdfdfsdfdsfsdfsdfdsdfdf"
+
+    imgContent.appendChild(slidesTextArea);
+    slidesTextArea.appendChild(slidesText);
 });
 
 slider.appendChild(prevButton);

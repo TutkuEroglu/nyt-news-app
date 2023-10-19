@@ -1,11 +1,33 @@
 body {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#newsWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#bigNews {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#cornerNews {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  padding: 5px;
+  box-sizing: border-box;
 }

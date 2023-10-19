@@ -1,0 +1,41 @@
+.mini-card {
+  width: 210px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.mini-card:not(:first-child) {
+  margin-top: 15px;
+}
+
+.mini-card img {
+  height: 140px;
+  width: 210px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.mini-card-content {
+  padding: 15px;
+}
+
+.mini-card-content h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mini-card-content p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

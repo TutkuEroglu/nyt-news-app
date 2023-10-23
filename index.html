@@ -6,8 +6,9 @@
     <link rel="stylesheet" type="text/css" href="/app.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="./components/navbar/navbar.css">
-    <link rel="stylesheet" type="text/css" href="./components/miniCard/newsCard.css">
-    <link rel="stylesheet" type="text/css" href="./components/floatingImg/floatingImg.css">
+    <link rel="stylesheet" type="text/css" href="./components/header/miniCard/newsCard.css">
+    <link rel="stylesheet" type="text/css" href="./components/header/floatingImg/floatingImg.css">
+    <link rel="stylesheet" type="text/css" href="./components/header/cornerCard/cornerCard.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,15 +16,26 @@
         <div id="navbarBody"></div>
     </div>
     <div id="newsWrapper">
-        <div id="bigNews"></div>
-        <div id="cornerNews"></div>
+        <div id="headerNewsWrapper">
+            <div id="headerNews">
+                <div id="headerMainNews"></div>
+                <div id="headerCornerNews"></div>
+            </div>
+            <div id="headerBottomNews">
+                <div></div>
+            </div>
+        </div>
+
+        <div id="headerNewsContainer">
+            <div id="containerCornerNews"></div>
+        </div>
     </div>
 
     <script src="app.js"></script>
-    <script src="/components/floatingImg/index.js"></script>
-    <script src="/components/miniCard/index.js"></script>
+    <script src="/components/header/floatingImg/index.js"></script>
+    <script src="/components/header/miniCard/index.js"></script>
+    <script src="/components//header/cornerCard/index.js"></script>
     <script src="/components/navbar/navbarSection.js"></script>
     <script src="/components/navbar/index.js"></script>
-    <script src="/components/input/index.js"></script>
 </body>
 </html>

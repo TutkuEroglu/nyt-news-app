@@ -1,10 +1,11 @@
 .mini-card {
-  width: 210px;
+  width: 160px;
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
   background-color: #ffffff;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 .mini-card:not(:first-child) {
@@ -12,19 +13,19 @@
 }
 
 .mini-card img {
-  height: 140px;
-  width: 210px;
+  height: 100px;
+  width: 160px;
   object-fit: cover;
   border-bottom: 1px solid #ddd;
 }
 
 .mini-card-content {
-  padding: 15px;
+  padding: 9px;
 }
 
 .mini-card-content h4 {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
   white-space: nowrap;
   overflow: hidden;

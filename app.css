@@ -10,24 +10,25 @@ body {
 
 #newsWrapper {
   display: flex;
-  justify-content: center;
-  padding: 5px;
+  justify-content: flex-start;
+  padding: 10px;
   box-sizing: border-box;
   max-width: 1200px;
+  height: 800px;
   margin: 0 auto;
 }
 
-#bigNews {
+#headerNewsWrapper {
   display: flex;
   flex-direction: column;
-  padding: 5px;
-  box-sizing: border-box;
 }
 
-#cornerNews {
+#headerNews {
   display: flex;
-  flex-direction: column;
-  width: 210px;
-  padding: 5px;
-  box-sizing: border-box;
+  height: 520px;
+}
+
+#headerNews {
+  display: flex;
+  height: 280px;
 }

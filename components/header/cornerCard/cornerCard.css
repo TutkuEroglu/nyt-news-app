@@ -1,0 +1,42 @@
+.corner-card {
+  width: 340px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.corner-card:not(:first-child) {
+  margin-top: 15px;
+}
+
+.corner-card img {
+  height: 220px;
+  width: 340px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.corner-card-content {
+  padding: 15px;
+}
+
+.corner-card-content h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.corner-card-content p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -21,6 +21,35 @@ slides.className = "slides";
 const controls = document.createElement("div");
 controls.className = "controls";
 
+const coinPriceWrapper = document.createElement("div");
+coinPriceWrapper.className = "coinPriceWrapper";
+
+const createCoinElement = (filteredData) => {
+  for (let i = 0; i < filteredData.length; i++) {
+    const priceChange = parseFloat(filteredData[i].priceChangePercent);
+    const price = parseFloat(filteredData[i].askPrice);
+
+    const coinWrapper = document.createElement("div");
+    coinWrapper.className = "coinWrapper";
+
+    const coinNames = document.createElement("label");
+    coinNames.className = "coinNames";
+    coinNames.textContent = `${filteredData[i].symbol}`;
+
+    const coinPrices = document.createElement("label");
+    if (priceChange > 0) {
+      coinPrices.className = "coinPrices positive";
+    } else {
+      coinPrices.className = "coinPrices negative";
+    }
+    coinPrices.textContent = `${price.toFixed(2)}$`;
+
+    coinWrapper.appendChild(coinNames);
+    coinWrapper.appendChild(coinPrices);
+    coinPriceWrapper.appendChild(coinWrapper);
+  }
+};
+
 const prevButton = document.createElement("button");
 prevButton.className = "bi bi-caret-left-fill prevButton";
 prevButton.addEventListener("click", previousSlide);
@@ -71,6 +100,7 @@ slider.appendChild(slides);
 
 sliderContainer.appendChild(slider);
 sliderContainer.appendChild(controls);
+sliderContainer.appendChild(coinPriceWrapper);
 
 function previousSlide() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
@@ -86,4 +116,4 @@ function updateCurrentSlide() {
   slides.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-bigNews.appendChild(sliderContainer);
+headerMainNews.appendChild(sliderContainer);

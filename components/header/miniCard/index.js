@@ -1,11 +1,11 @@
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 3; i++) {
   const miniCard = document.createElement("div");
   miniCard.className = "mini-card";
   const cardImage = document.createElement("img");
   cardImage.src =
-    "https://static01.nyt.com/images/2023/10/18/multimedia/18israel-hamas-iran-threats-01-fblk/18israel-hamas-iran-threats-01-fblk-mediumThreeByTwo210.jpg"; // Resmin URL'sini buraya ekleyin
-  cardImage.style.height = "140px";
-  cardImage.style.width = "210px";
+    "https://static01.nyt.com/images/2023/10/22/multimedia/22ny-war-tensions--01-tfqv/22ny-war-tensions--01-tfqv-articleInline.jpg";
+  cardImage.style.height = "100px";
+  cardImage.style.width = "160px";
   miniCard.appendChild(cardImage);
 
   const cardContent = document.createElement("div");
@@ -20,5 +20,5 @@ for (let i = 0; i < 5; i++) {
   cardContent.appendChild(description);
 
   miniCard.appendChild(cardContent);
-  cornerNews.appendChild(miniCard);
+  headerCornerNews.appendChild(miniCard);
 }

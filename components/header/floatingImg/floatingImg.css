@@ -2,11 +2,15 @@
   max-width: 600px;
   text-align: center;
   position: relative;
+  height: 100%;
+  
 }
 
 .slider {
   overflow: hidden;
   position: relative;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .slides {
@@ -109,4 +113,43 @@ button {
 .numbers:hover {
   background-color: #ec0000;
   color: white;
+}
+
+.coinPriceWrapper {
+  background-color: #FFFFFF;
+  width: 100%;
+  margin-top: 10px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+}
+
+.coinWrapper {
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.coinNames {
+  margin-right: 3px;
+}
+
+.coinWrapper {
+  border-right: 1px solid #ddd;
+}
+
+.coinWrapper:last-child {
+  border-right: none;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
 }

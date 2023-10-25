@@ -1,0 +1,41 @@
+.medium-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 245px;
+  }
+  
+  .medium-card:not(:first-child) {
+    margin: 0;
+  }
+  
+  .medium-card img {
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .medium-card-content {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .medium-card-content h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .medium-card-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

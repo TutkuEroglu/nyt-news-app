@@ -34,7 +34,7 @@ const createCoinElement = (filteredData) => {
 
     const coinNames = document.createElement("label");
     coinNames.className = "coinNames";
-    coinNames.textContent = `${filteredData[i].symbol}`;
+    coinNames.textContent = `${filteredData[i].symbol}:`;
 
     const coinPrices = document.createElement("label");
     if (priceChange > 0) {

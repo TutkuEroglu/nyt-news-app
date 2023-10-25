@@ -1,0 +1,40 @@
+.bottomNewsHeaderText {
+  font-size: 18px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+.bottom-mini-card {
+    overflow: hidden;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 275px;
+    min-height: 60px;
+  }
+
+  .bottom-mini-card img {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .bottom-mini-card-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .bottom-mini-card-content h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

@@ -1,5 +1,5 @@
 .corner-card {
-  width: 340px;
+  width: 294px;
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
@@ -13,14 +13,13 @@
 }
 
 .corner-card img {
-  height: 220px;
-  width: 340px;
   object-fit: cover;
   border-bottom: 1px solid #ddd;
 }
 
 .corner-card-content {
-  padding: 15px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .corner-card-content h4 {

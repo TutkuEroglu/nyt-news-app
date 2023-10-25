@@ -28,7 +28,37 @@ body {
   height: 520px;
 }
 
-#headerNews {
+#headerBottomNews {
+  height: 235px;
   display: flex;
-  height: 280px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#containerCornerNews {
+  height: 480px;
+}
+
+#containerCornerBottomNews {
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin: 15px 0 0 15px;
+  border: 1px solid #ddd;
+  gap: 10px;
+}
+
+#bottomMiniCardWrapper {
+  overflow-y: auto;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

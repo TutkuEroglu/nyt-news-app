@@ -34,6 +34,26 @@ async function fetchCoinPrices() {
   return modifiedData;
 }
 
+async function fetchNewsData() {  
+  const url = "https://api.nytimes.com/svc/topstories/v2/world.json?api-key="
+  const key = "DHcYntXbf6PLNb4dHEteUtWpK6EzgdOz"
+  const response = await fetch(url + key)
+  const data = await response.json();
+  console.log(data)
+  
+  const FloatingImgData = data?.results?.slice(0, 14);
+  const miniCardData = data?.results?.slice(14, 17);
+  const corderCardData = data?.results?.slice(17, 19);
+  const mediumCardData = data?.results?.slice(19, 22);
+  const bottomMiniCornerData = data?.results?.slice(22, 30);
+  flatingNews(FloatingImgData);
+  miniNews(miniCardData);
+  cornerNews(corderCardData);
+  bottomMediumNews(mediumCardData);
+  bottomMiniCornerNews(bottomMiniCornerData)
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   fetchCoinPrices();
+  fetchNewsData();
 });

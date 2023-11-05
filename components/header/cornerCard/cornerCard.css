@@ -1,5 +1,6 @@
 .corner-card {
   width: 294px;
+  min-height: 232px;
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
@@ -24,7 +25,7 @@
 
 .corner-card-content h4 {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
   white-space: nowrap;
   overflow: hidden;

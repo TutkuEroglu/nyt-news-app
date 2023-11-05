@@ -1,22 +1,22 @@
 const navbarSection = [
   {
     id: 1,
-    text: "GÜNDEM",
+    text: "POLITICS",
   },
   {
     id: 2,
-    text: "DÜNYA",
+    text: "WORLD",
   },
   {
     id: 3,
-    text: "SPOR",
+    text: "SPORTS",
   },
   {
     id: 4,
-    text: "YAŞAM",
+    text: "LIFESTYLE",
   },
   {
     id: 5,
-    text: "MODA",
+    text: "FASHION",
   },
 ];

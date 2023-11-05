@@ -5,6 +5,7 @@
     background-color: #ffffff;
     cursor: pointer;
     width: 245px;
+    min-height: 234px;
   }
   
   .medium-card:not(:first-child) {
@@ -23,7 +24,7 @@
   
   .medium-card-content h4 {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
     white-space: nowrap;
     overflow: hidden;

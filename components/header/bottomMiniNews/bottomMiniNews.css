@@ -1,6 +1,6 @@
 .bottomNewsHeaderText {
   font-size: 18px;
-  color: #333;
+  color: #000;
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
   box-sizing: border-box;
@@ -28,17 +28,13 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    
   }
   
   .bottom-mini-card-content h4 {
     margin: 0;
     font-size: 11px;
-    color: #333;
+    color: #000;
     white-space: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
-    
-    
   }

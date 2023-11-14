@@ -1,6 +1,5 @@
 const bottomMediumNews = (data) => {
   for (let i = 0; i < data.length; i++) {
-    console.log(data)
     const mediumCard = document.createElement("div");
     mediumCard.className = "medium-card";
     const mediumCardImage = document.createElement("img");

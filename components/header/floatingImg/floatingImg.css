@@ -139,6 +139,7 @@ button {
 
 .coinNames {
   margin-right: 3px;
+  font-weight: 550;
 }
 
 .coinWrapper {
@@ -151,8 +152,10 @@ button {
 
 .positive {
   color: green;
+  font-weight: 550;
 }
 
 .negative {
   color: red;
+  font-weight: 550;
 }

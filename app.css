@@ -1,16 +1,20 @@
+@import url('https://fonts.cdnfonts.com/css/metropolis-2');
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
   background-color: #f3f3f3;
 }
 
 * {
   box-sizing: border-box;
+  font-family: "Metropolis Extra Bold", Arial;
+  color: #000;
 }
 
 #newsWrapper {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   box-sizing: border-box;
   max-width: 1200px;
@@ -61,4 +65,74 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  box-sizing: border-box;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.line {
+  margin: 40px 0 25px;
+  width: 100%;
+}
+
+.line_container {
+  background-color: #f40;
+  display: flex;
+  align-items: center;
+  height: 11px;
+  margin: 15px 0 15px;
+  position: relative;
+}
+
+.line_title {
+  background-color: #f3f3f3;
+  color: #000;
+  font-size: 30px;
+  letter-spacing: -1.2px;
+  margin-top: 15px;
+  padding-right: 25px;
+}
+
+.line_tag {
+  background-color: #f3f3f3;
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.6px;
+  padding-left: 22px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: -2px;
+}
+
+.line_tag::before {
+  background-color: #f3f3f3;
+  content: "";
+  height: 17px;
+  left: -5px;
+  position: absolute;
+  top: 3px;
+  transform: rotate(25deg);
+  width: 15px;
+}
+
+.line_tag::after {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  content: "";
+  display: inline-block;
+  margin-left: 12px;
+  padding: 3px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }

@@ -29,7 +29,7 @@
 .mini-card-content h4 {
   margin: 0;
   font-size: 11px;
-  color: #333;
+  color: #000;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -40,7 +40,7 @@
   font-size: 9px;
   min-height: 30px;
   max-height: 30px;
-  color: #666;
+  color: #333;
   white-space: wrap;
   overflow: hidden;
   text-overflow: ellipsis;

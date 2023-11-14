@@ -46,11 +46,15 @@ async function fetchNewsData() {
   const corderCardData = data?.results?.slice(17, 19);
   const mediumCardData = data?.results?.slice(19, 22);
   const bottomMiniCornerData = data?.results?.slice(22, 30);
+  const otherBigNewData = data?.results?.slice(31, 32);
+  const otherNewsData = data?.results?.slice(31, 35);
   flatingNews(FloatingImgData);
   miniNews(miniCardData);
   cornerNews(corderCardData);
   bottomMediumNews(mediumCardData);
-  bottomMiniCornerNews(bottomMiniCornerData)
+  bottomMiniCornerNews(bottomMiniCornerData);
+  createBigNewTable(otherBigNewData);
+  createFourNewsTable(otherNewsData);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
